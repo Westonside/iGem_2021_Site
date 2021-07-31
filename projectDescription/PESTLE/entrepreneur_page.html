@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../Entrepreneur/entrepreneur-styles.css">
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src = "genericpage.js"></script>
+        <script src = "../../invisible nav/nav.js"></script>
+        <link rel = "stylesheet" href = "../Entrepreneur/navstyle.css">
+        <link rel="stylesheet" media="only screen and (max-width: 1526px)" href="../Entrepreneur/entrephone.css" />
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        //generate the content based off of the page using session storage
+
+        const section = sessionStorage.getItem('page');
+
+        const generatePage = () =>{
+            //access the session storage to know what page is trying to be accessed
+        }
+
+        document.addEventListener('DOMContentLoaded', () =>{
+
+        });
+
+    </script>
+
+
+
+    <body>
+
+        <nav>
+            <div id = "dropdown_trip">
+                <div id = "line1"></div>
+                <div id = "line2"></div>
+                <div id = "line3"></div>
+            </div>
+
+            <ul class = "nav_links">
+                <li id = "logo_for_nav" class = "nav_one">
+                    <a href ="/invisible nav/index.html"><img src = "/Site/invisible nav/reallogo.png" class =  "nav_logo" height="50px" width="50px"></a>
+                </li>
+                <div id = "first_nav_holder">
+                    <li id = "first_link_nav"><a href = "#" class="link" data-navsection = "project_nav_holder" id = "first_link">Project</a></li>
+                    <!-- the section that corresponds tp the link clicked is stored as a data value -->
+                    <li><a href = "#" class = "link start" data-navsection = "models_nav_holder">Models</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "human_nav_holder">Human Practices</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Team</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Parts</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Judging Form</a></li>
+                </div>
+
+                <div id = "project_nav_holder">
+                    <li><a href = "#" class = "link link_project" data-navsection = "first_nav_holder" id = "backStart">Back</a></li>
+                    <li><a href = "/modelspage/models.html" class = "link link_project final final_link" data-navsection = "first_nav_holder">Description</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Results</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Engineering</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Implementation</a></li>
+                    <li><a href = "#" class = "link link_project final_link" data-navsection = "first_nav_holder">Sponsors</a></li>
+                </div>
+
+                <div id = "models_nav_holder">
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">1</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Collaboration</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Partnership</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Notebook</a></li>
+                </div>
+
+                <div id = "human_nav_holder">
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Education & Outreach</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Interviews</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Surveys</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Reflection</a></li>
+                </div>
+                
+               
+
+            </ul>
+
+            
+            
+        </nav>
+
+
+    
+
+        <section id = "top_section">
+            <h1 id = "header">Pestel</h1>
+        </section>
+        <div id = "holder">
+            <div id = "table_of_contents">
+                <ul id = "toc">
+                    <li><button data-section = "introduction" class = "toc_button">Introduction</button></li>
+                    <li><button data-section = "political" class = "toc_button">Political</button></li>
+                    <li><button data-section = "economic" class = "toc_button">Economic</button></li>
+                    <li><button data-section = "social" class = "toc_button">Social</button></li>
+                    <li><button data-section = "technology" class = "toc_button">Technology</button></li>
+                    <li><button data-section = "environment" class = "toc_button">Environment</button></li>
+                    <li><button data-section = "legal" class = "toc_button">Legal</button></li>
+                    <li><button data-section = "conclusion" class = "toc_button">Conclusion</button></li>
+                    <li><button data-section = "references" class = "toc_button">References</button></li>
+
+
+                </ul>
+            </div>
+
+            <img src ="../../invisible nav/bluefish.svg" id = "blue_fish">
+            <img src = "../../invisible nav/fish-tropical.svg" id = "yellow_fish">
+
+            <img src ="../../invisible nav/ALSOUSELATER.svg" id = "colorful_fish">
+
+
+            <div class = "content">
+                <div id = "first_section" class = "sections">
+                    <div class = "content_holder">
+                        <h2 id = "introduction" class = "section_header">Introduction</h2>
+                        <p class = "article_content after_head">In order to predict how well our product would perform, we used PESTEL analysis. This is a tool used in business to monitor macro-level 
+                                                                factors that could affect the success of a business or organisation (Business to you, 2016) This is used as a complementary to last year’s <a href = "https://2020.igem.org/Team:St_Andrews/Human_Practices">SWOT</a> analysis. </p>
+
+
+                        <p class = "article_content">PESTEL is an acronym that stands for Political, Economic, Social, Technology, Environment and Legal, which are macro factors that can influence the performance of an organization in a market.</p>
+
+                        <p class = "article_content">We picked up a few key factors within each category and hypothesized how they could affect the launch and performance of Shinescreen in the future. </p>
+                        
+                        <img src = "Pestel.png" alt = "PESTEL IMG" class = "large_image shrink_image">
+
+                        <p class = "figure_text">Figure 1. All significant key factors that we believe could play a role in Shinescreen’s performance on the sunscreen market. </p>
+                
+                    </div>
+                </div>
+
+                <div id = "second_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "political" class = "section_header">Political</h2>
+                        <p class = "article_content after_head">The biggest factor that could impact our product is the further banning of toxic sunscreen chemicals such as ZnO. Hawaii has already banned the selling of sunscreen containing oxybenzone and octinoxate,
+                             a law that came into effect 1st of January 2021 (HNN Staff, 2021) and Palau was the first country to ban “reef-toxic” sunscreen in 2020 (BBC, 2020). This would likely make Shinescreen more attractive as other companies have to rebrand and 
+                             remake their formulas while Shinescreen is already on the market. It will also help the reef-safe sunscreen market grow as there will be a bigger interest meaning that we will have a greater chance to receive funding to develop our concept and formula. </p>
+
+
+                        <p class = "article_content">Another significant factor is if different countries decide to implement stricter rules to try to reduce covid cases such as national lockdowns or more requirements if you wish to enter a certain country, which would reduce tourism.
+                            In turn, it would reduce the demand for sunscreen as people do not travel to warm places for holidays. Even in warm places, the demand for sunscreen would decrease as people are forced to spend less time outside. </p>
+
+                
+                    </div>
+                </div>
+
+                <div id = "third_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "economic" class = "section_header">Economic</h2>
+                        <p class = "article_content after_head">The main factor that would reduce the demand for our product is the continuation of the global recession due to the Covid-pandemic (The World Bank, 2020) caused by new forms of mutations
+                                                                to the existing covid strand. Already the pandemic has caused people to lose their jobs or gotten lower household incomes (CBPP, 2021), meaning that more people would not have had the means
+                                                                to travel to sunny places and/or beaches and hence not need the sunscreen, nor be able to afford the sunscreen or deprioritize sunscreen. The sunscreen market has projected a CAGR of around 7%,
+                                                                however, due to the pandemic, there has been a significant drop in demand and sales. In the US alone the sales for sunscreen dropped by almost 20%. On account of this, continuation of the pandemic 
+                                                                would most likely continue this trend and making it hard for us to launch our sunscreen because the fall the in demand (Fact.MR, 2020). </p>
+
+                
+                    </div>
+                </div>
+
+                <div id = "fourth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "social" class = "section_header">Social</h2>
+                        <p class = "article_content after_head">The current trend of climate consciousness in the world leads to more people becoming educated about environmental issues and prompting people to make more eco-friendly decisions, which favours our product. </p>
+
+                        <p class = "article_content after_head">However, last year’s sunscreen study showed that 8.70% strongly disagreed and 10% disagreed when asked how much they agree with the statement that GMOs was safe for human health, showing that GMOs is still a controversial
+                                                                topic among the general public. This could impact the willingness of customers to buy our product as we genetically modify bacteria, although the majority agreed or were neutral to the statement. In the same study questions
+                                                                regarding probiotics were also asked if people were comfortable with applying a probiotic cream on their skin, where the majority responded Very comfortable or comfortable. This suggests that there is a demand and market opening
+                                                                for our product as customers seem to be willing to purchase probiotic sunscreen (iGEM St Andrews 2020, 2020), and we would be one of few probiotic sunscreen companies. </p>
+
+                    </div>
+                </div>
+
+
+                <div id = "fith_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "technology" class = "section_header">Technology</h2>
+                        <p class = "article_content after_head">Our idea of using probiotic sunscreen and our method, as outlined in our project section, is relatively new and not much research has been done. Therefore, as more research and development are made in this area, the more we can improve our product. </p>
+
+
+                        
+                    </div>
+                </div>
+
+                <div id = "sixth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "environment" class = "section_header">Environment</h2>
+                        <p class = "article_content after_head">Several reports, including NASA’s (NASA, 2021) and IPPCC special report (Arneth et al., 2019) show increasing global regional temperatures, making people start to become more concerned about the environment and try to seek products that are environmentally friendly, such as our product. Otherwise, there are not many significant environmental factors. </p>
+                        
+
+                
+                    </div>
+                </div>
+
+                <div id = "seventh_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "legal" class = "section_header">Legal</h2>
+                        <p class = "article_content after_head">In general, we need to consult with a lawyer about which legal factors we need to think about, especially as the cosmetic regulations in the United Kingdom and Europe are complex.</p>
+                        
+
+                
+                    </div>
+                </div>
+
+                <div id = "eighth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "conclusion" class = "section_header">Conclusion</h2>
+                        <p class = "article_content after_head">The main factors which can have both positive and negative impacts on the success of our sunscreen are social factors relating to trends and opinions of the use of GMO and probiotics,
+                                                                Economic factors such as a global recession and household income, and Political factors like bans on other sunscreen ingredients. As these factors are highly variable it is important that 
+                                                                we keep tracking them to be aware of the status quo and find the right time to launch Shinescreen, as well as incorporating strategies for them in our business plan and SMART goals. </p>
+                        
+
+                
+                    </div>
+                </div>
+
+                <div id = "nineth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "references" class = "section_header">References</h2>
+                        
+                        <p class = "article_content after_head">BBC (2020) ‘Palau is first country to ban “reef toxic” sun cream’, BBC News, 1 January. Available at: https://www.bbc.com/news/world-asia-50963080 (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Business to you (2016) Scanning the Environment: PESTEL Analysis, Business-to-you. Available at: https://www.business-to-you.com/scanning-the-environment-pestel-analysis/ (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">CBPP (2021) Tracking the COVID-19 Recession’s Effects on Food, Housing, and Employment Hardships, Center on Budget and Policy Priorities. Available at: https://www.cbpp.org/research/poverty-and-inequality/tracking-the-covid-19-recessions-effects-on-food-housing-and (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Fact.MR (2020) Sun Protection Products Market, Fact.MR. Available at: https://www.factmr.com/report/140/sun-protection-products-market (Accessed: 22 July 2021). </p>
+                        <p class = "article_content after_head">HNN Staff (2021) ‘Hawaii’s ban on coral-harming sunscreens goes into effect New Year’s Day’, Hawaii News Now, 1 January. Available at: https://www.hawaiinewsnow.com/2020/12/31/hawaiis-ban-coral-harming-sunscreens-goes-into-effect-new-years-day/ (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">iGEM St Andrews 2020 (2020) Human Practices, Shinescreen. Available at: https://2020.igem.org/Team:St_Andrews/Human_Practices#Shinescreen%20Case%20Study (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">NASA (2021) Global Surface Temperature | NASA Global Climate Change, Climate Change: Vital Signs of the Planet. Available at: https://climate.nasa.gov/vital-signs/global-temperature (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">The World Bank (2020) COVID-19 to Plunge Global Economy into Worst Recession since World War II, World Bank. Available at: https://www.worldbank.org/en/news/press-release/2020/06/08/covid-19-to-plunge-global-economy-into-worst-recession-since-world-war-ii (Accessed: 19 July 2021). </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id = "bub_holding">
+            <div class = "bubble first_bub"></div>
+            <div class = "bubble second_bub"></div>
+            <div class = "bubble third_bub"></div>
+            <div class = "bubble fourth_bub"></div>
+            <div class = "bubble fifth_bub"></div>
+            <div class = "bubble sixth_bub"></div>
+            <div class = "bubble seventh_bub"></div>
+            <div class = "bubble eigth_bub"></div>
+            <div class = "bubble nineth_bub"></div>
+            <div class = "bubble tenth_bub"></div>
+            <div class = "bubble eleventh_bub"></div>
+            <div class = "bubble twelveth_bub"></div>
+            <div class = "bubble thirteenth_bub"></div>
+            <div class = "bubble fourteenth_bub"></div>
+
+
+
+
+
+            <div class = "bubble a15_bub"></div>
+            <div class = "bubble a16_bub"></div>
+            <div class = "bubble a17_bub"></div>
+            <div class = "bubble a18_bub"></div>
+            <div class = "bubble a19_bub"></div>
+            <div class = "bubble a20_bub"></div>
+            <div class = "bubble a21_bub"></div>
+
+            <div class = "bubble a22_bub"></div>
+            <div class = "bubble a23_bub"></div>
+            <div class = "bubble a24_bub"></div>
+            <div class = "bubble a25_bub"></div>
+        </div>
+                    
+    </body>
+</html>
+

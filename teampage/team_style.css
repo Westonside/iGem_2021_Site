@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin-top: 0;
+}
+
+
+
+html,body{
+    overflow: auto;
+    min-width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(180deg,#D2F2F7,#1C88DE);
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#top_head{    
+    background-color: #4A7041;
+    height: 50vh;
+}
+
+#top_header{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 5em;
+}
+
+
+
+.main_container{
+    /* height: 147%; */
+    overflow-x: hidden;
+    
+}
+
+
+
+
+.member_container{
+    /* margin-top: 5em; */
+    /* border: 2px solid #000; */
+    min-height: 30vh;
+    margin-right: 5em;
+    margin-left: 10em;
+    opacity: 0;
+    transition: opacity .8s .25s ease-out;
+    will-change: opacity;
+    position: relative;
+    z-index: 2;
+}
+
+/* @keyframes fall{
+
+    0%{
+       
+
+        transform: translateY(0%)  rotate(45deg);
+    }
+
+    100%{
+        transform: translateY(120%)  rotate(45deg);
+    }
+} */
+.member_photo {
+    animation: fall 2s forwards;
+    width: 12em;
+    height: 12em;
+    /* border: 2px solid #000; */
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    
+    /* background-size: 22em;
+    background-position-y: -4.7em;
+    background-position-x: -4.9em; */
+    position: relative;
+    overflow: hidden;
+    left: 15em;
+    z-index: 2;
+
+}
+
+#annaM{
+    background-image: url(annatest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#maia{
+    background-image: url(maibeeson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#juliaAsh{
+    background-image: url(juliaAshley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#AJ{
+    background-image: url(AJ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#yoricka{
+    background-image: url(Yoricka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-x: 10px; */
+}
+
+#annaS{
+    background-image: url(AnnaS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weston{
+    background-image: url(weston.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seen{
+    opacity: 1;
+    
+}
+
+.seen .member_text{
+    transform: translateX(10em);
+    transition: transform 2s;
+}
+
+.seen .member_photo{
+    transform: translateY(150%) rotate(45deg);
+    transition: transform 2s .25s;
+}
+
+.member_text{
+    height: 34em;
+    margin-left: 2em;
+    border: 25px solid #4A7041;
+    border-radius: 5em;
+    bottom: 3em;
+    position: relative;
+    margin-right: 5em;
+    background-color: #E5E2BE;
+    width: 60vw;
+    box-shadow: 0px 8px 10px rgba(53, 85, 121, 0.35), 
+    -10px 8px 15px rgba(53, 85, 121, 0.35), 10px 8px 15px rgba(53, 85, 121, 0.35);
+}
+
+
+p{
+    margin-bottom: 0;
+}
+
+
+
+.bio_content{
+    min-height: 5em;
+    padding-top: 2em;
+    line-height: 2rem;
+}
+
+.bio{
+    padding-top: 4em;
+    margin-left: 10em;
+    padding-left: 6em;
+    padding-right: 3em;
+}
+
+.header_bio{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 3.4em;
+}
+
+
+.degree{
+    
+}
+
+.fun_fact{
+    margin-top: 2em;
+}
+
+.member_text > *{
+    color: #4A7041;
+}
+
+.location{
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.degree{
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+
+
+/* bubbles */
+
+.bubble{
+    position: relative;
+    top: 90%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.3;
+    bottom: -30px;
+    animation: bubble 13s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate,
+    sideWaysRight 3s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+
+@keyframes bubble {
+    0% {
+      transform: translateY(0%);
+      opacity: 0.06;
+    }
+    100% {
+        /* moves upwards */
+      transform: translateY(-800vh);
+    }
+  }
+  
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 180px;
+    }
+  }
+
+  @keyframes sideWaysRight {
+      0%{
+          margin-right: 0px;
+      }
+      100%{
+          margin-right: 150px;
+      }
+  }
+
+
+
+
+  .first_bub{
+    /* top: -50%; */
+    left: 5%;
+    animation-delay: 0.2s;
+    animation-duration: 30s;
+    opacity: 0.8;
+}
+
+.second_bub{
+    left:60%;
+    animation-delay: 0.4s;
+    animation-duration: 15s;
+    opacity: 0.9;
+}
+
+.third_bub{
+    left:50%;
+    animation-delay: 0.3s;
+    /* animation-duration: 10s; */
+    opacity: 0.3;
+    animation: bubble 10s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+.fourth_bub{
+    left:20%;
+    animation-delay: 0.1s;
+    /* animation-duration: 34s; */
+    opacity: 0.3;
+    animation: bubble 34s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+.fifth_bub{
+    left:30%;
+    animation-delay: 0.7s;
+    animation-duration: 31s;
+    opacity: 0.5;
+    animation: bubble 31s ease-in-out infinite,
+    sideWaysRight 3s ease-in-out infinite alternate;
+}
+
+.sixth_bub{
+    left:5%;
+    animation-delay: 0.4;
+    animation-duration: 35s;
+    opacity: 0.7;
+}
+
+.seventh_bub{
+    left: 80%;
+    animation-delay: 0.5;
+    animation-duration: 25s;
+    opacity: 0.5;
+}
+
+.eight_bub{
+    left:2%;
+    animation-delay: 0.1;
+    animation-duration: 25s;
+    opacity: 0.5;
+}
+
+
+.nineth_bub{
+    left:1%;
+    animation-delay: 0.3;
+    animation-duration: 40s;
+    opacity: 0.9;
+}
+
+.tenth_bub{
+    left:90%;
+    animation-delay: 0.5;
+    animation-duration: 39s;
+    opacity: 0.9;
+}
+.eleventh_bub{
+    left:94%;
+    animation-delay: 0.2;
+    animation-duration: 29s;
+    opacity: 0.95;
+}
+
+.twelveth_bub{
+    left:95%;
+    animation-duration: 20s;
+    opacity: 0.95;
+}
+
+.thirtheenth_bub{
+    left:97%;
+    animation-duration: 13s;
+    opacity: 0.8;
+}
+
+.fourteenth_bub{
+    left: 0%;
+    animation-duration:50s;
+    opacity: 0.69;
+}
+
+.a15_bub{
+    left: 99%;
+    animation-duration:50s;
+    opacity: 0.8;
+}
+
+.a16_bub{
+    left:2%;
+    animation-duration: 42s;
+    opacity: 0.95;
+}
+.a17_bub{
+    left:10%;
+    animation-delay: 1s;
+    animation-duration: 45s;
+    opacity: 0.85;
+}
+
+.a18_bub{
+    left:80%;
+    animation-delay: 0.5s;
+    animation-duration: 30s;
+    opacity: 0.75;
+}
+
+.a19_bub{
+    left:85%;
+    animation-delay: 0.5s;
+    animation-duration: 30s;
+    opacity: 0.75;
+}
+.a20_bub{
+    left:5%;
+    animation-duration: 42s;
+    opacity: 0.95;
+}
+
+.a21_bub{
+    left:92%;
+    animation-duration: 39s;
+    opacity: 0.95;
+}
+
+
+.a22_bub{
+    left:95%;
+    animation-duration: 44s;
+    opacity: 0.95;
+}
+
+.a23_bub{
+    left: 88%;
+    animation-duration: 15s;
+    opacity: 0.89;
+}
+
+/* end bubbles  */
+
+@keyframes color_fish {
+    0%{
+        transform: translate(60%);
+
+    }
+
+    100%{
+        transform: translate(-2200%);
+    }
+}
+
+#color_fish{
+    padding-left: 1em;
+    animation: color_fish 20s ease-in-out infinite;
+    height: 8em;
+    position: relative;
+    left:90%;
+}
+
+@keyframes bluefish{
+    0%{
+        transform: translateX(-200%);
+    }
+    
+    30%{
+        transform: translateX(60%);
+    }
+    40%{
+        transform: translate(100%,50%);
+    }
+    100%{
+        transform: translateX(2000%);
+    }
+}
+
+#blue_fish{
+    padding-right: 3em;
+    animation: bluefish 30s ease-in-out infinite;
+    height: 10em;
+}
+
+@keyframes specialfish{
+    0%{
+        transform: translate(-90%);
+    }
+    20%{
+        transform: translate(100%,30%);
+    }
+    100%{
+        transform: translate(2100%,-100%);
+    }
+}
+
+#green_fish{
+    animation: specialfish 22s ease-in-out infinite;
+    height: 10em;
+    padding-right: 1em;
+}
+
+
+
+@keyframes fish {
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translateX(-2000%);
+        
+    }
+}
+#orange_fish{
+    height: 8em;
+    padding-left: 2em;
+    position: relative;
+    left: 80%;
+    animation: fish 25s ease-in-out infinite;
+    
+}
+

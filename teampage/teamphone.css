@@ -1,0 +1,36 @@
+
+:root{
+   --invSize: calc(-50vw + 82em)
+}
+
+
+.member_text{
+    
+    height: var(--invSize);
+   
+    /* left: 0; */
+}
+
+.member_container{
+    margin-left: 0;
+}
+
+
+.header_bio{
+    line-height: 1.1 ;
+    font-size: 40px;
+}
+
+
+.bio{
+    text-align: justify;
+    padding-left: 0;
+    margin-left: 11em;
+    /* shape-outside: circle(); */
+}
+
+.member_photo{
+    left: 14.5em;
+    height: 9em;
+    width: 9em;
+}

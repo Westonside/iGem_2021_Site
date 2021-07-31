@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../Entrepreneur/entrepreneur-styles.css">
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src = "../Entrepreneur/genericpage.js"></script>
+        <script src = "../../invisible nav/nav.js"></script>
+        <link rel = "stylesheet" href = "../Entrepreneur/navstyle.css">
+        <link rel="stylesheet" media="only screen and (max-width: 1526px)" href="../Entrepreneur/entrephone.css" />
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        //generate the content based off of the page using session storage
+
+        const section = sessionStorage.getItem('page');
+
+        const generatePage = () =>{
+            //access the session storage to know what page is trying to be accessed
+        }
+
+        document.addEventListener('DOMContentLoaded', () =>{
+
+        });
+
+    </script>
+
+
+
+    <body>
+
+        <nav>
+            <div id = "dropdown_trip">
+                <div id = "line1"></div>
+                <div id = "line2"></div>
+                <div id = "line3"></div>
+            </div>
+
+            <ul class = "nav_links">
+                <li id = "logo_for_nav" class = "nav_one">
+                    <a href ="/invisible nav/index.html"><img src = "/Site/invisible nav/reallogo.png" class =  "nav_logo" height="50px" width="50px"></a>
+                </li>
+                <div id = "first_nav_holder">
+                    <li id = "first_link_nav"><a href = "#" class="link" data-navsection = "project_nav_holder" id = "first_link">Project</a></li>
+                    <!-- the section that corresponds tp the link clicked is stored as a data value -->
+                    <li><a href = "#" class = "link start" data-navsection = "models_nav_holder">Models</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "human_nav_holder">Human Practices</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Team</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Parts</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Judging Form</a></li>
+                </div>
+
+                <div id = "project_nav_holder">
+                    <li><a href = "#" class = "link link_project" data-navsection = "first_nav_holder" id = "backStart">Back</a></li>
+                    <li><a href = "/modelspage/models.html" class = "link link_project final final_link" data-navsection = "first_nav_holder">Description</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Results</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Engineering</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Implementation</a></li>
+                    <li><a href = "#" class = "link link_project final_link" data-navsection = "first_nav_holder">Sponsors</a></li>
+                </div>
+
+                <div id = "models_nav_holder">
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">1</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Collaboration</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Partnership</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Notebook</a></li>
+                </div>
+
+                <div id = "human_nav_holder">
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Education & Outreach</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Interviews</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Surveys</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Reflection</a></li>
+                </div>
+                
+               
+
+            </ul>
+
+            
+            
+        </nav>
+
+
+    
+
+        <section id = "top_section">
+            <h1 id = "header">Product Development and Improvement</h1>
+        </section>
+        <div id = "holder">
+            <div id = "table_of_contents">
+                <ul id = "toc">
+                    <li><button data-section = "introduction" class = "toc_button">Introduction</button></li>
+                    <li><button data-section = "weakness" class = "toc_button">Weaknesses</button></li>
+                    <li><button data-section = "threats" class = "toc_button">Threats</button></li>
+                    <li><button data-section = "moreThreats" class = "toc_button">More Threats</button></li>
+                    <li><button data-section = "references" class = "toc_button">References</button></li>
+
+
+                </ul>
+            </div>
+
+            <img src ="../../invisible nav/bluefish.svg" id = "blue_fish">
+            <img src = "../../invisible nav/fish-tropical.svg" id = "yellow_fish">
+
+            <img src ="../../invisible nav/ALSOUSELATER.svg" id = "colorful_fish">
+
+
+            <div class = "content">
+                <div id = "first_section" class = "sections">
+                    <div class = "content_holder">
+                        <h2 id = "introduction" class = "section_header">Introduction</h2>
+                        <p class = "article_content after_head">The phase 1 Shinescreen project did an in-depth SWOT analysis where strengths (S), Weaknesses (W), Opportunities (O) and Threats (T) regarding our sunscreen were detected. In our 
+                                                                phase 2 project, we decided to continue this and give suggestions on how the weaknesses could be addressed and what general improvements can be made, focussing on the product. The 
+                                                                PESTEL analysis was also considered when finding improvements. </p>
+
+                        
+                        <img src = "SWOT.png" alt = "PESTEL IMG" class = "large_image shrink_image" id = "swot">
+
+                        <p class = "figure_text">Figure 1. SWOT analysis from last year.</p>
+                
+                    </div>
+                </div>
+
+                <div id = "second_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "weakness" class = "section_header">Approaches to weaknesses</h2>
+                        <h4 class = "sub_section_title">Incorporate UV-B light</h4>
+                        <p class = "article_content after_head">The biggest factor that could impact our product is the further banning of toxic sunscreen chemicals such as ZnO. Hawaii has already banned the selling of sunscreen containing oxybenzone and octinoxate,
+                             a law that came into effect 1st of January 2021 (HNN Staff, 2021) and Palau was the first country to ban “reef-toxic” sunscreen in 2020 (BBC, 2020). This would likely make Shinescreen more attractive as other companies have to rebrand and 
+                             remake their formulas while Shinescreen is already on the market. It will also help the reef-safe sunscreen market grow as there will be a bigger interest meaning that we will have a greater chance to receive funding to develop our concept and formula. </p>
+
+                        <h4 class = "sub_section_title">Negative view of GMOs</h4>
+                        
+                        <p class = "article_content">The way to prevent negative views of GMOs is to open a discussion about GMOs and bring up realistic threats, to give people the chance to make an opinion. This can be demonstrated from last year, which showed that 30% would be more 
+                            comfortable with using GMO products, and 50% would be open to using cosmetics that used GMOs (iGEM St Andrews 2020, 2020). This was shown after hosting a synthetic biology forum where they invited experts within the field to provide the attendees with different 
+                            views of GMOs. Thus, by incorporating an education and outreach program relating to our project, we hope that more people will make educated decisions when choosing if they want to use our product or not. In this year’s project we aim to produce educational material 
+                            regarding the Shinescreen project and synthetic biology. One of the target groups we chose was mom and baby groups, as they have the purchasing power to buy sustainable sunscreen and vegans. More can be read under Human Practices. </p>
+
+                
+                    </div>
+                </div>
+
+                <div id = "third_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "threats" class = "section_header">Approaches to threats</h2>
+                        <h4 class = "sub_section_title">Research and Development funding shortage</h4>
+                        <p class = "article_content after_head">In order to ensure that funding will not run out a long-term sponsor or partner should be found. To do this, the team should reach out to companies and governmental bodies to pitch the idea. However, more research that would acquire proof
+                             of concept should be made before pitching to larger investors. A patent could not be acquired last year due to a lack of proof of a concept, and therefore going to investors with the aim of a long-term partnership would most likely end up with the same result. </p>
+
+                        <h4 class = "sub_section_title">Legislation</h4>
+                        <p class = "article_content after_head">As cosmetic legislation is complex, and we would need a lawyer or someone with legal expertise that would guide us through what the current regulations are. As we aim to launch our product in the United Kingdom first and later to the rest of Europe.
+                             We therefore must consider both the United Kingdom’s regulations as well as the European Union’s. For example, the regulations from the United Kingdom states “A product must be safe for human health under normal and reasonably foreseeable conditions of use” (Office for Product and Safety & Standards, 2021). 
+                             Meaning that we need to ensure that Shinorine and other compounds that we add must be tested for safety before the sunscreen’s launch. For instance, if we use non-nano-zinc oxide, we need to ensure it is safe for human health. Moreover, there are many more regulations that we must consider such as packaging symbols 
+                             and cosmetic product safety assessment. </p>
+                        
+                
+                    </div>
+                </div>
+
+                <div id = "fourth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "moreThreats" class = "section_header">Additional threats to product and product improvements </h2>
+                        <h4 class = "sub_section_title">Packaging</h4>
+
+                        <p class = "article_content after_head">A future threat with the product is the use of non-eco-friendly packaging, like plastic, which would erupt a backlash to the whole company and counteract the positive change that we are aiming to achieve. Additionally, 
+                            in the interview with Rick Babel, the CEO of the sunscreen company Mama Kuleana, he mentioned that a key element for our product’s success is the packaging. Without eco-friendly packaging, the eco-friendly product would be wasteful. Consequently, the team aim to 
+                            develop biodegradable packaging and cream using raw and natural products in the future. The material for the bottle could be packaging or corn starch for example.</p>
+
+                        <img src = "#" alt = "sunscreendesign">
+
+                        <p class = "figure_text">Figure 2. The sunscreen bottle design.</p>
+
+                        <h4 class = "sub_section_title">Product Shelf Life</h4>
+
+
+                        <p class = "article_content after_head">In an interview with Ingmar Claes, Chief Scientific Officer at YUN cosmetics, he told us that another important part of designing a cosmetics product is the shelf life. In his opinion, the general shelf life of commercial cosmetic
+                             products is 18 months (though this would vary based on our specific bacteria and storage methods). Especially if we are dealing with probiotic bacteria shelf life is vital, for if our product exceeds its shelf life the bacteria would no longer be viable.</p>
+
+                        <p class = "article_content after_head">Our team came up with a few possible solutions to maintaining shelf life and how to store the bacteria. These potential methods include freeze-drying and micro-encapsulation.</p>
+
+                        <p class = "article_content after_head">For the freeze-drying method, compatible solutes would be added to the cream to preserve the bacteria. It has shown that the addition of trehalose can improve the survival of E.Coli NISSLE 1917 when freeze-dried. Another method would be
+                             to air dry the bacteria and add protective solutes (Louis, Trüper and Galinski, 1994). </p>
+
+                        <p class = "article_content after_head">Our team learned about Microencapsulation from Ingmar Claes (at YUN Probiotherapy), as this technique is used to preserve the active strains of live probiotic bacteria present in their cosmetics. The basis of this process is that the bacteria
+                             are first deactivated and later stabilized by microencapsulation. When the product is opened the bacteria will reactivate and can be applied to the skin. It would also allow us to produce a water-based cream and keep the bacteria alive.</p>
+
+                             <p class = "article_content after_head">Nevertheless, more research and testing must be done to determine the most optimal method. </p>
+
+                    </div>
+                </div>
+
+
+                
+
+                <div id = "nineth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "references" class = "section_header">References</h2>
+                        
+                        <p class = "article_content after_head">Dale Wilson, B., Moon, S. and Armstrong, F. (2012) ‘Comprehensive Review of Ultraviolet Radiation and the Current Status on Sunscreens’, The Journal of Clinical and Aesthetic Dermatology, 5(9), pp. 18–23. </p>
+                        <p class = "article_content after_head">iGEM St Andrews 2020 (2020) Human Practices, Shinescreen. Available at: https://2020.igem.org/Team:St_Andrews/Human_Practices#Shinescreen%20Case%20Study (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Louis, P., Trüper, H. G. and Galinski, E. A. (1994) ‘Survival of Escherichia coli during drying and storage in the presence of compatible solutes’, Applied Microbiology and Biotechnology, 41(6), pp. 684–688. doi: 10.1007/BF00167285. </p>
+                        <p class = "article_content after_head">Office for Product and Safety & Standards (2021) ‘Regulation 2009/1223 and the Cosmetic Products Enforcement Regulations 2013’. Office for Product Safety & Standards. Available at: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/968602/Guide-to-cosmetic-products-regulations-2013-tp.pdf (Accessed: 21 July 2021). </p>
+                        <p class = "article_content after_head">Smijs, T. G. and Pavel, S. (2011) ‘Titanium dioxide and zinc oxide nanoparticles in sunscreens: focus on their safety and effectiveness’, Nanotechnology, Science and Applications, 4, pp. 95–112. doi: 10.2147/NSA.S19419. </p>
+                        
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id = "bub_holding">
+            <div class = "bubble first_bub"></div>
+            <div class = "bubble second_bub"></div>
+            <div class = "bubble third_bub"></div>
+            <div class = "bubble fourth_bub"></div>
+            <div class = "bubble fifth_bub"></div>
+            <div class = "bubble sixth_bub"></div>
+            <div class = "bubble seventh_bub"></div>
+            <div class = "bubble eigth_bub"></div>
+            <div class = "bubble nineth_bub"></div>
+            <div class = "bubble tenth_bub"></div>
+            <div class = "bubble eleventh_bub"></div>
+            <div class = "bubble twelveth_bub"></div>
+            <div class = "bubble thirteenth_bub"></div>
+            <div class = "bubble fourteenth_bub"></div>
+
+
+
+
+
+            <div class = "bubble a15_bub"></div>
+            <div class = "bubble a16_bub"></div>
+            <div class = "bubble a17_bub"></div>
+            <div class = "bubble a18_bub"></div>
+            <div class = "bubble a19_bub"></div>
+            <div class = "bubble a20_bub"></div>
+            <div class = "bubble a21_bub"></div>
+
+            <div class = "bubble a22_bub"></div>
+            <div class = "bubble a23_bub"></div>
+            <div class = "bubble a24_bub"></div>
+            <div class = "bubble a25_bub"></div>
+        </div>
+                    
+    </body>
+</html>
+

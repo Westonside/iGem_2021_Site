@@ -1,0 +1,20 @@
+
+    
+
+
+   .second_slide{
+       height: 86%;
+       bottom: 11%;
+       font-size: medium;
+   }
+
+
+
+    @media screen and (max-width:624px) {
+        .second_slide{
+            overflow: auto;
+        }
+    }
+
+
+    

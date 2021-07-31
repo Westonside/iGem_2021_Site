@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "entrepreneur-styles.css">
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src = "genericpage.js"></script>
+        <script src = "../invisible nav/nav.js"></script>
+        <link rel = "stylesheet" href = "navstyle.css">
+        <link rel="stylesheet" media="only screen and (max-width: 1526px)" href="entrephone.css" />
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        //generate the content based off of the page using session storage
+
+        const section = sessionStorage.getItem('page');
+
+        const generatePage = () =>{
+            //access the session storage to know what page is trying to be accessed
+        }
+
+        document.addEventListener('DOMContentLoaded', () =>{
+
+        });
+
+    </script>
+
+
+
+    <body>
+
+        <nav>
+            <div id = "dropdown_trip">
+                <div id = "line1"></div>
+                <div id = "line2"></div>
+                <div id = "line3"></div>
+            </div>
+
+            <ul class = "nav_links">
+                <li id = "logo_for_nav" class = "nav_one">
+                    <a href ="/invisible nav/index.html"><img src = "/Site/invisible nav/reallogo.png" class =  "nav_logo" height="50px" width="50px"></a>
+                </li>
+                <div id = "first_nav_holder">
+                    <li id = "first_link_nav"><a href = "#" class="link" data-navsection = "project_nav_holder" id = "first_link">Project</a></li>
+                    <!-- the section that corresponds tp the link clicked is stored as a data value -->
+                    <li><a href = "#" class = "link start" data-navsection = "models_nav_holder">Models</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "human_nav_holder">Human Practices</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Team</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Parts</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Judging Form</a></li>
+                </div>
+
+                <div id = "project_nav_holder">
+                    <li><a href = "#" class = "link link_project" data-navsection = "first_nav_holder" id = "backStart">Back</a></li>
+                    <li><a href = "/modelspage/models.html" class = "link link_project final final_link" data-navsection = "first_nav_holder">Description</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Results</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Engineering</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Implementation</a></li>
+                    <li><a href = "#" class = "link link_project final_link" data-navsection = "first_nav_holder">Sponsors</a></li>
+                </div>
+
+                <div id = "models_nav_holder">
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">1</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Collaboration</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Partnership</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Notebook</a></li>
+                </div>
+
+                <div id = "human_nav_holder">
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Education & Outreach</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Interviews</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Surveys</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Reflection</a></li>
+                </div>
+                
+               
+
+            </ul>
+
+            
+            
+        </nav>
+
+
+    
+
+        <section id = "top_section">
+            <h1 id = "header">Entrepreneurship</h1>
+        </section>
+        <div id = "holder">
+            <div id = "table_of_contents">
+                <ul id = "toc">
+                    <li><button data-section = "value_prop" class = "toc_button">Value&nbsp;Proposition</button></li>
+                    <li><button data-section = "method" class = "toc_button">Method</button></li>
+                    <li><button data-section = "key_terms" class = "toc_button">Key Terms</button></li>
+                    <li><button data-section = "application" class = "toc_button">Application</button></li>
+                    <li><button data-section = "key_customers" class = "toc_button">Key Customers</button></li>
+                    <li><button data-section = "main_substitues" class = "toc_button">Main Substitues</button></li>
+                    <li><button data-section = "references" class = "toc_button">References</button></li>
+
+
+                </ul>
+            </div>
+
+            <img src ="../../invisible nav/bluefish.svg" id = "blue_fish">
+            <img src = "../../invisible nav/fish-tropical.svg" id = "yellow_fish">
+
+            <img src ="../../invisible nav/ALSOUSELATER.svg" id = "colorful_fish">
+
+
+            <div class = "content">
+                <div id = "first_section" class = "sections">
+                    <div class = "content_holder">
+                        <h2 id = "value_prop" class = "section_header">Value Proposition</h2>
+                        <p class = "article_content after_head">Shinescreen offers a probiotic sunscreen that is both environmental-friendly and protects the consumer against UV light, which is made
+                                                                possible by shinorine, a naturally occurring compound that absorbs UV-A light.  </p>
+
+
+                        <p class = "article_content">Our product will be adapted to all skin tones, and we are therefore aiming to develop a transparent formula. In addition,
+                                                    the application of Shinescreen will not leave a white cast on the skin, which has been shown to be unpopular among customers. The use of probiotic 
+                                                    bacteria also opens up to the possibility for our sunscreen to prevent acne if the product is further developed in the future. </p>
+
+                        <p class = "article_content">The product will be accessible and affordable for customers as the genes expressing shinorine will be inserted into probiotic bacteria and then directly
+                                                    applied to the skin, cutting production costs. </p>
+
+                        <p class = "article_content">Shinescreen is thus a new ground-breaking environmental and inclusive sunscreen that gives full protection against UV-A light and aim to appeal to customers
+                                                    who seek eco-friendly products that reduce ecotoxicity, for example vegans, tourists going to sunny places and people who use sunscreen regularly. </p>
+                
+                    </div>
+                </div>
+
+                <div id = "second_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "method" class = "section_header">Method</h2>
+                        <p class = "article_content after_head">Most of the value proposition was based on last year’s phase 1 project’s unique value proposition, but we wanted to shorten it down and make
+                                                                it easier for the general public to understand. We wanted it to have a more inclusivity and diversity focus, which was why we decided to try to make a transparent formula.</p>
+
+
+                        <p class = "article_content">We also wanted to understand the process of coming up with an effective value proposition and hence we used a value proposition canvas to identify key benefits that our sunscreen would give to the customer. 
+                                                     The model we chose is shown below and encompasses the idea of pains and gains based on the ideas by Dr Alexander Osterwalder (Thomson, 2013).</p>
+
+                
+                    </div>
+                </div>
+
+                <div id = "third_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "key_terms" class = "section_header">Key Terms</h2>
+                        <p class = "article_content after_head">Customer jobs refer to the functional, emotional or social tasks that the customer is trying to perform, trying to solve, and needs that are wished to be met. Gains are the benefits that the customer
+                                                                needs and expectations, and Pains are the negative experience, emotions or risks that the customer faces when trying to get the customer job done. Gain creators are the ways in which the product creates gain and how it produces value to the customer. Pain relievers aim to tell how the product alleviate pains. The product is how the product produce gain and relieves pain and how that creates value to the customer (International, n.d). </p>
+
+                
+                    </div>
+                </div>
+
+                <div id = "fourth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "application" class = "section_header">Application</h2>
+                        <p class = "article_content after_head">Applying the proposition canvas to our product meant to come up with ways our sunscreen would relieve pain and create gain to the customer. Gains and pains relate to the benefits and drawbacks that come with performing the customer jobs listed below, when for example applying sunscreen.  </p>
+                        <p class = "article_content">We identified key consumers, potential substitutes, main gain creators and pain relievers which would shape our value proposition and work throughout. </p>
+
+                        <img src = "tablefix.png" class = "large_image" alt="application explanation">
+                        <p class = "figure_text">Figure 1. Value proposition canvas. Pains and gains from sunscreen and how Shinescreen can relieve these pains and create gain. Information taken from Parrish Healthcare (2020) and St Andrews iGEM(2020). </p>
+
+                    </div>
+                </div>
+
+
+                <div id = "fith_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "key_customers" class = "section_header">KEY CUSTOMERS</h2>
+                        <p class = "article_content after_head">At first, we were thinking that our main consumer group would be environmental-conscious customers that want to make more environmental-friendly decisions. However, after the interview with Rick Babel,
+                                                                the CEO of Mama Kuleana, who highlighted that the main problem is tourists who travel to for example Hawaii and use sunscreen with ecotoxic ingredients, we decided that another key consumer group is people who seek to go on holiday to places with reefs. In 2019 around 16.1 million foreign tourists visited Indonesia (Wail Akhlas, 2020) and 9.4 million foreign tourists in Australia the same year (Budget Direct, n.d). </p>
+
+
+                        <p class = "article_content">Later upon discovery that sunscreen pollution can damage other marine species as well (Donws, 2016) we decided that the key customer group should be people who seek to go on holiday and use sunscreen in general, 
+                            and not only specify it to tourists who seek to visit places with reefs. </p>
+
+                        <p class = "article_content">Our main customer groups are therefore tourists, sunscreen users and people who seek environmentally friendly solutions such as vegans. Our focus will mainly be customers in Europe as it is there, we aim to launch our sunscreen first. </p>
+                    </div>
+                </div>
+
+                <div id = "sixth_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "main_substitues" class = "section_header">Main Substitutes</h2>
+                        <p class = "article_content after_head">Potential substitutes would be cheaper environmental-friendly options that provide both UV-A and UV-B protection, such as sunscreens using non-nano zinc oxide.</p>
+                        <p class = "article_content after_head">By using the naturally occurring compound called Shinorine we provide full UVA protection as well as a sunscreen with no toxic ingredients. In addition, our engineered kill switch, which prevents bacteria from escaping to the 
+                                                                environment, makes our product is eco-safe. With the use of Shinorine and our designed kill switch, we add value to the customer in addition to sun protection generating a gain creator.</p>
+                        <p class = "article_content after_head">Our sunscreen also works as a pain reliever. Due to the rising awareness of the climate crisis and the prevailing threats to the marine environment, people seek to make environmentally conscious choices. The main pain reliever
+                             of our product is therefore its positive impact on the environment when using the product and the good feeling that is created when making an environmentally conscious choice. Our product is also probiotic meaning that it is made from natural ingredients which could further appeal to customers to purchase our product.</p>
+
+                
+                    </div>
+                </div>
+
+                <div id = "seventh_section" class = "sections">
+                    <div class = "content_holder not_first">
+                        <h2 id = "references" class = "section_header">References</h2>
+                        
+                        <p class = "article_content after_head">5 Reasons To Use Sunscreen Every Day (no date) Parrish Healthcare. Available at: https://www.parrishhealthcare.com/news/2020/july/5-reasons-to-use-sunscreen-every-day/ (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Budget Direct (no date) Australian Tourism Industry 2020 | Travel Research & Statistics, Budget Direct. Available at: https://www.budgetdirect.com.au/travel-insurance/research/tourism-statistics.html (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Donws (2016) ‘Sunscreen Pollution’, MarineSafe, 18 March. Available at: http://www.marinesafe.org/blog/2016/03/18/sunscreen-pollution/ (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">iGEM St Andrews 2020 (2020) Human Practices, Shinescreen. Available at: https://2020.igem.org/Team:St_Andrews/Human_Practices#Shinescreen%20Case%20Study (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">International, B. (no date) ‘What is the Value Proposition Canvas?’, B2B International. Available at: https://www.b2binternational.com/research/methods/faq/what-is-the-value-proposition-canvas/ (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Thomson, A. P. (2013) Value Proposition Canvas Template, Peter J Thomson. Available at: https://www.peterjthomson.com/2013/11/value-proposition-canvas/ (Accessed: 19 July 2021). </p>
+                        <p class = "article_content after_head">Wail Akhlas, A. (2020) ‘Indonesia welcomes 16.1m foreign tourists in 2019, coronavirus clouds tourism outlook’, The Jakarta Post, 3 February. Available at: https://www.thejakartapost.com/news/2020/02/03/indonesia-welcomes-16-1m-foreign-tourists-in-2019-coronavirus-clouds-tourism-outlook.html (Accessed: 19 July 2021). </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id = "bub_holding">
+            <div class = "bubble first_bub"></div>
+            <div class = "bubble second_bub"></div>
+            <div class = "bubble third_bub"></div>
+            <div class = "bubble fourth_bub"></div>
+            <div class = "bubble fifth_bub"></div>
+            <div class = "bubble sixth_bub"></div>
+            <div class = "bubble seventh_bub"></div>
+            <div class = "bubble eigth_bub"></div>
+            <div class = "bubble nineth_bub"></div>
+            <div class = "bubble tenth_bub"></div>
+            <div class = "bubble eleventh_bub"></div>
+            <div class = "bubble twelveth_bub"></div>
+            <div class = "bubble thirteenth_bub"></div>
+            <div class = "bubble fourteenth_bub"></div>
+
+
+
+
+
+            <div class = "bubble a15_bub"></div>
+            <div class = "bubble a16_bub"></div>
+            <div class = "bubble a17_bub"></div>
+            <div class = "bubble a18_bub"></div>
+            <div class = "bubble a19_bub"></div>
+            <div class = "bubble a20_bub"></div>
+            <div class = "bubble a21_bub"></div>
+
+            <div class = "bubble a22_bub"></div>
+            <div class = "bubble a23_bub"></div>
+            <div class = "bubble a24_bub"></div>
+            <div class = "bubble a25_bub"></div>
+        </div>
+                    
+    </body>
+</html>
+

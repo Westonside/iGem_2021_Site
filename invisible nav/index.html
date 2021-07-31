@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">    
+        <link href = "styling.css" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+        <link rel="stylesheet" media="only screen and (max-width: 1586px)" href="small.css" />
+        <link rel="stylesheet" media="only screen and (max-width: 1125px)" href="iphone_style.css" />
+        <link rel="stylesheet" media="only screen and (max-width: 1125px)" href="iphone_style.css" />
+        <script src = "script.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () =>{
+                const downArrow = document.getElementById('down_arrow');
+
+                downArrow.onclick = () =>{
+
+
+
+                    document.querySelector('.second_slide').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+            });
+
+
+
+            //get rid of the first two and the last one
+
+            
+        </script>
+    </head>
+    <body>
+    
+        <nav>
+            <div id = "dropdown_trip">
+                <div id = "line1"></div>
+                <div id = "line2"></div>
+                <div id = "line3"></div>
+            </div>
+
+            <ul class = "nav_links">
+                <li id = "logo_for_nav" class = "nav_one">
+                    <a href = "/invisible nav/index.html">
+                        <img src = "/invisible nav/reallogo.png" class =  "nav_logo" height="50px" width="50px" alt = "logo">
+                    </a>
+                </li>
+                <div id = "first_nav_holder">
+                    <li id = "first_link_nav"><a href = "#/" class="link" data-navsection = "project_nav_holder" id = "first_link">Project</a></li>
+                    <!-- the section that corresponds tp the link clicked is stored as a data value -->
+                    <li><a href = "#/" class = "link start" data-navsection = "models_nav_holder">Models</a></li>
+                    <li><a href = "#/" class = "link start" data-navsection = "human_nav_holder">Human Practices</a></li>
+                    <li><a href = "#/" class = "link start" data-navsection = "team_nav_holder">Team</a></li>
+                    <li><a href = "#/" class = "link start" data-navsection = "entre_nav_holder">Entrepreneurship</a></li>
+                    <li><a href = "#/" class = "link start" data-navsection = "project_nav_holder">Judging Form</a></li>
+                </div>
+
+                <div id = "project_nav_holder">
+                    <li><a href = "#" class = "link link_project" data-navsection = "first_nav_holder" id = "backStart">Back</a></li>
+                    <li><a href = "/modelspage/models.html" class = "link link_project final final_link" data-navsection = "first_nav_holder">Description</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Results</a></li>
+                    <li><a href = "#/" class = "link link_project final final_link" data-navsection = "first_nav_holder">Engineering</a></li>
+                    <li><a href = "#/" class = "link link_project final final_link" data-navsection = "first_nav_holder">Implementation</a></li>
+                    <li><a href = "#/" class = "link link_project" data-navsection = "first_nav_holder">Parts</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Safety</a></li>
+                </div>
+
+                <div id = "models_nav_holder">
+                    <li><a href = "#/" class = "link link_models" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#/" class = "link link_models" data-navsection = "first_nav_holder">1</a></li>
+                    <li><a href = "#/" class = "link link_models" data-navsection = "first_nav_holder">Collaboration</a></li>
+                    <li><a href = "#/" class = "link link_models" data-navsection = "first_nav_holder">Partnership</a></li>
+                    <li><a href = "#/" class = "link link_models" data-navsection = "first_nav_holder">Notebook</a></li>
+                </div>
+
+                <div id = "human_nav_holder">
+                    <li><a href = "#/" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#/" class = "link link_human" data-navsection = "first_nav_holder">Education & Outreach</a></li>
+                    <li><a href = "#/" class = "link link_human" data-navsection = "first_nav_holder">Interviews</a></li>
+                    <li><a href = "#/" class = "link link_human" data-navsection = "first_nav_holder">Surveys</a></li>
+                    <li><a href = "#/" class = "link link_human" data-navsection = "first_nav_holder">Sunscreen Case Study</a></li>
+                </div>
+
+                <div id = "team_nav_holder">
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Team Members</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Attributions</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Sponsors</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Collaboration</a></li>
+                </div>
+
+                <div id = "entre_nav_holder">
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">VP</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">PESTEL</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Sponsors</a></li>
+                    <li><a href = "#/" class = "link link_project final_link" data-navsection = "first_nav_holder">Product Improvement</a></li>
+                </div>
+                
+               
+
+            </ul>
+
+            
+            
+        </nav>
+
+
+        <div class = "main_overlay">
+            
+            <section id = "first_section">
+                <!-- <img src = "reallogo.png"id = "logo"> -->
+                <h2 id = "logo">Shinescreen</h2>
+                <h3 id = "logo_description">Reef-Safe Probiotic Sunscreen</h3>
+                
+                <div id = "down_arrow" href = "#second_slide">
+                    <div id = "first_line"></div>
+                    <div id = "second_line"></div>
+                    <div id = "third_line"></div>
+                    <div id = "fourth_line"></div>
+
+                </div>
+            </section>
+
+            
+                
+                
+                
+
+                <!-- other content slides-->
+                <div id = "first_spacing"></div>
+                
+                <div class = "content_holder">
+                    <!-- <img src ="fish03.svg" id = "yellow_black_fish"> -->
+                    <div class = "slide" id="slide1">
+                        <div class = "slide">
+                            <div class="second_slide" id = "first_slide">
+                                <div class="text_contain" id="project_section" style="display: block;">
+                                    <h1 class="content_header">PROJECT</h1>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-6"><img src = "#" alt = "stand in"></div>
+                                        <div class="col-6"><p class = "content_content"> We, the St Andrews iGEM team, are using synthetic biology to create Shinescreen: a probiotic, sustainable sunscreen that poses no harm to the marine environment. </p></div>
+                                      </div>
+                
+                                    <p class="content_content">
+                                        Instead of containing the toxic, coral-degrading chemicals found in many commercially-available sunscreens, Shinescreen makes use of shinorine: a natural, non-toxic, UV-protecting compound already produced by a number of marine organisms. <br><br> During our iGEM project, our team will be engineering the (non-pathogenic, FDA- approved) Nissle 1917 E. Coli bacterium to overexpress shinorine, such that this bacterium could confer UV protection to the user upon its application to the surface of human skin. Through engineering the bacterium in this way, our Shinescreen project eliminates the use of environmentally-damaging chemicals - thus introducing a reef-safe alternative to many of the sunscreens currently found on the market.
+                                    </p>
+                                    
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                    <img src = "bluefish.svg" id = "blue_fish">
+
+                    <div class = "slide">
+                        <div class = "slide">
+                            <div class="second_slide">
+                                <div class="text_contain" id="project_section" style="display: block;">
+                                    <h1 class="content_header">MODELS</h1>
+                                    <br>
+                                    <p class="content_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                
+                                    <p class="content_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p class="content_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src = "fish-tropical.svg" id = "yellow_fish">
+                    
+                    
+                    <div class = "slide" id = "third_slide">
+                        <div class="second_slide">
+                            <div class="text_contain" id="project_section" style="display: block;">
+                                <h1 class="content_header">HUMAN PRACTICES</h1>
+                                <br>
+                                <p class="content_content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+            
+                                <p class="content_content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                               
+                            </div>                          
+                        </div>
+                    </div>
+                   <img src = "greenfish.svg" id = "green_fish">
+                   <img src = "ALSOUSELATER.svg" id = "colorful_fish">
+                    <div class = "slide" id = "final_slide">
+                        <div class="second_slide">
+                            <div class="text_contain" id="project_section" style="display: block;">
+                                <h1 class="content_header">TEAM</h1>
+                                <br>
+                                <p class="content_content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+            
+                                <p class="content_content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="content_content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>                          
+                        </div>
+                    </div>
+
+
+
+                    
+
+
+                    <div><img src = "mystica-Aquarium-fish-Xiphophorus-maculatus.svg" id = "orange_fish"></div>
+                    <div class = "bubble first_bub"></div>
+                    <div class = "bubble second_bub"></div>
+                    <div class = "bubble third_bub"></div>
+                    <div class = "bubble fourth_bub"></div>
+                    <div class = "bubble fifth_bub"></div>
+                    <div class = "bubble sixth_bub"></div>
+                    <div class = "bubble seventh_bub"></div>
+                    <div class = "bubble eigth_bub"></div>
+                    <div class = "bubble nineth_bub"></div>
+                    <div class = "bubble tenth_bub"></div>
+                    <div class = "bubble eleventh_bub"></div>
+                    <div class = "bubble twelveth_bub"></div>
+                    <div class = "bubble thirteenth_bub"></div>
+                    <div class = "bubble fourteenth_bub"></div>
+
+
+
+
+
+                    <div class = "bubble a15_bub"></div>
+                    <div class = "bubble a16_bub"></div>
+                    <div class = "bubble a17_bub"></div>
+                    <div class = "bubble a18_bub"></div>
+                    <div class = "bubble a19_bub"></div>
+                    <div class = "bubble a20_bub"></div>
+                    <div class = "bubble a21_bub"></div>
+
+                    <div class = "bubble a22_bub"></div>
+                    <div class = "bubble a23_bub"></div>
+                    <div class = "bubble a24_bub"></div>
+                    <div class = "bubble a25_bub"></div>
+                    <img src = "USE_LATER.svg" id = "weird_fish">
+                </div>
+                
+                <div id = "before_footer">
+                    
+                </div>
+                    
+                <footer>
+                    <div id = "footer_contain">
+                         <div class="row" id = "footer_row">
+                             <div class="col-4 col-md-3" id = "logo_holder"><img src = "reallogo.png" id = "footer_logo"></div>
+                             <div class="col-6 col-md-3 push_rows"><h3>Contact Us</h3>
+                                 
+                                 <a href = "mailto: igem2021@universityofstandrews907.microsoft.com" id ="email_link">
+
+                                     <img src = "jean-victor-balin-icon-letter-mail.svg" id = "email_icon">
+                                  Email Us
+                             </a>
+                             <p>Address St Andrews KY16</p>
+                         </div>
+                             <div class="col-6 col-md-3 push_rows" id = "media_images">
+                                 <h3>Follow Us</h3>
+                                 <a href = "https://www.linkedin.com/company/shinescreen/"><img src = "LI-In-Bug.png" id = "linkedin"></a>
+                                 <a href = "https://www.instagram.com/igem2021standrews/"><img src = "Instagram_Glyph_Gradient_RGB.png"  id = "linkedin"></a>
+                                 <a href = "https://www.facebook.com/st.andrews.igem"><img src = "f_logo_RGB-Blue_100.png" id = "linkedin"></a>
+                             </div>
+                         </div>
+
+                         <div id ="contact_section">
+
+                            <div id = "footer_line"></div>
+                     </div>
+                 
+                     <div class="row" id = "sponsors">
+                         <div class="col-6 col-md-4"><img src = "Sea-Changers Marine Conservation Charity Block Blue Sea Social.png" class = "sponsor_logo"></div>
+                         <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                         <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                     </div>
+                     
+                    </div>
+
+                    <img src = "Coral3.svg" id = "footer_coral1">
+                    
+                </footer>
+                
+                
+                
+            
+
+            
+               </div> 
+        </body>
+
+        
+    
+</html>

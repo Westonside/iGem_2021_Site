@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "modelstyles.css">
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src = "genericpage.js"></script>
+        <script src = "/invisible nav/nav.js"></script>
+        <link rel = "stylesheet" href = "navstyle.css">
+    </head>
+    <script>
+        //generate the content based off of the page using session storage
+
+        const section = sessionStorage.getItem('page');
+
+        const generatePage = () =>{
+            //access the session storage to know what page is trying to be accessed
+        }
+
+        document.addEventListener('DOMContentLoaded', () =>{
+
+        });
+
+    </script>
+
+
+
+    <body>
+
+        <nav>
+            <div id = "dropdown_trip">
+                <div id = "line1"></div>
+                <div id = "line2"></div>
+                <div id = "line3"></div>
+            </div>
+
+            <ul class = "nav_links">
+                <li id = "logo_for_nav" class = "nav_one">
+                    <a href ="/invisible nav/index.html"><img src = "/invisible nav/reallogo.png" class =  "nav_logo" height="50px" width="50px"></a>
+                </li>
+                <div id = "first_nav_holder">
+                    <li id = "first_link_nav"><a href = "#" class="link" data-navsection = "project_nav_holder" id = "first_link">Project</a></li>
+                    <!-- the section that corresponds tp the link clicked is stored as a data value -->
+                    <li><a href = "#" class = "link start" data-navsection = "models_nav_holder">Models</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "human_nav_holder">Human Practices</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Team</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Parts</a></li>
+                    <li><a href = "#" class = "link start" data-navsection = "project_nav_holder">Judging Form</a></li>
+                </div>
+
+                <div id = "project_nav_holder">
+                    <li><a href = "#" class = "link link_project" data-navsection = "first_nav_holder" id = "backStart">Back</a></li>
+                    <li><a href = "/modelspage/models.html" class = "link link_project final final_link" data-navsection = "first_nav_holder">Description</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Results</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Engineering</a></li>
+                    <li><a href = "#" class = "link link_project final final_link" data-navsection = "first_nav_holder">Implementation</a></li>
+                    <li><a href = "#" class = "link link_project final_link" data-navsection = "first_nav_holder">Sponsors</a></li>
+                </div>
+
+                <div id = "models_nav_holder">
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">1</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Collaboration</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Partnership</a></li>
+                    <li><a href = "#" class = "link link_models" data-navsection = "first_nav_holder">Notebook</a></li>
+                </div>
+
+                <div id = "human_nav_holder">
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Back</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Education & Outreach</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Interviews</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Surveys</a></li>
+                    <li><a href = "#" class = "link link_human" data-navsection = "first_nav_holder">Reflection</a></li>
+                </div>
+                
+               
+
+            </ul>
+
+            
+            
+        </nav>
+
+
+
+
+        <section id = "top_section">
+            <h1 id = "header">Here is the header</h1>
+        </section>
+        <div id = "holder">
+            <div id = "table_of_contents">
+                <ul id = "toc">
+                    <li><a href = "#/">Something</a></li>
+                    <li><a href = "#/">Something</a></li>
+                    <li><a href = "#/">Something</a></li>
+                    <li><a href = "#/">Something</a></li>
+                </ul>
+            </div>
+
+            <div class = "content">Something \n or rather</div>
+        </div>
+    </body>
+</html>
+
+
+<!-- <div id = "table_of_contents">
+    <ul id = "toc">
+        <li><a href = "#/">Something</a></li>
+        <li><a href = "#/">Something</a></li>
+        <li><a href = "#/">Something</a></li>
+        <li><a href = "#/">Something</a></li>
+    </ul>
+</div> -->
+
+<!-- <div id = "content"></div> -->
